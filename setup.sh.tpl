@@ -30,8 +30,8 @@ sudo a2enmod rewrite
 sudo a2dissite 000-default
 sudo systemctl restart apache2
 
-sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
-sudo -u www-data sed -i 's/localhost/${database_host}/' /srv/www/wordpress/wp-config.php
+sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php      /srv/www/wordpress/wp-config.php
+sudo -u www-data sed -i 's/localhost/${database_host}/'          /srv/www/wordpress/wp-config.php
 sudo -u www-data sed -i 's/database_name_here/${database_name}/' /srv/www/wordpress/wp-config.php
-sudo -u www-data sed -i 's/username_here/${database_username}/' /srv/www/wordpress/wp-config.php
-sudo -u www-data sed -i 's/password_here/${database_password}/' /srv/www/wordpress/wp-config.php
+sudo -u www-data sed -i 's/username_here/${database_username}/'  /srv/www/wordpress/wp-config.php
+sudo -u www-data sed -i 's/password_here/${database_password}/'  /srv/www/wordpress/wp-config.php
